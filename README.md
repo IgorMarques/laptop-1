@@ -33,10 +33,10 @@ time, then press `return` after each one to download and execute the
 script, respectively:
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/18F/laptop/master/mac
+curl --remote-name https://raw.githubusercontent.com/IgorMarques/laptop/master/mac
 bash mac 2>&1 | tee ~/laptop.log
 ```
-The [script](https://github.com/18F/laptop/blob/master/mac) itself is
+The [script](https://github.com/IgorMarques/laptop/blob/master/mac) itself is
 available in this repo for you to review if you want to see what it does
 and how it works.
 
@@ -47,11 +47,6 @@ automatically at the end of the script so you can set up everything you'll
 need to push code to GitHub.
 
 Once the script is done, make sure to quit and relaunch Terminal.
-
-More [detailed instructions with a video][video] are available in the Wiki.
-
-[Spotlight]: https://support.apple.com/en-us/HT204014
-[video]: https://github.com/18F/laptop/wiki/Detailed-installation-instructions-with-video
 
 Debugging
 ---------
@@ -65,14 +60,10 @@ whole log file as an attachment.
 What it sets up
 ---------------
 
-* [CloudApp] for sharing screenshots and making an animated GIF from a video
-* [Cloud Foundry CLI] for command line access to 18F's Cloud Foundry-based application platform
-* [Flux] for adjusting your Mac's display color so you can sleep better
 * [GitHub for Mac] for setting up your SSH keys automatically
 * [Homebrew] for managing operating system libraries
 * [Homebrew Cask] for quickly installing Mac apps from the command line
 * [Homebrew Services] so you can easily stop, start, and restart services
-* [hub] for interacting with the GitHub API
 * [ImageMagick] for cropping and resizing images
 * [MySQL] for storing relational data
 * [Node.js] and [NPM], for running apps and installing JavaScript packages
@@ -81,22 +72,13 @@ What it sets up
 * [Qt] for headless JavaScript testing via Capybara Webkit
 * [Redis] for storing key-value data
 * [RVM] for managing Ruby versions (includes [Bundler] and the latest [Ruby])
-* [Slack] for communicating with your team
-* [Sublime Text 3] for coding all the things
-* [The Silver Searcher] for finding things in files
-* [Virtualenv] for creating isolated Python environments
-* [Virtualenvwrapper] for extending Virtualenv
 * [Zsh] as your shell
 
 [Bundler]: http://bundler.io/
-[CloudApp]: http://getcloudapp.com/
-[Cloud Foundry CLI]: https://github.com/cloudfoundry/cli
-[Flux]: https://justgetflux.com/
 [GitHub for Mac]: https://mac.github.com/
 [Homebrew]: http://brew.sh/
 [Homebrew Cask]: http://caskroom.io/
 [Homebrew Services]: https://github.com/gapple/homebrew-services
-[hub]: https://github.com/github/hub
 [ImageMagick]: http://www.imagemagick.org/
 [MySQL]: https://www.mysql.com/
 [Node.js]: http://nodejs.org/
@@ -107,11 +89,6 @@ What it sets up
 [Redis]: http://redis.io/
 [Ruby]: https://www.ruby-lang.org/en/
 [RVM]: https://github.com/wayneeseguin/rvm
-[Slack]: https://slack.com/
-[Sublime Text 3]: http://www.sublimetext.com/3
-[The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
-[Virtualenv]: https://virtualenv.pypa.io/en/latest/
-[Virtualenvwrapper]: http://virtualenvwrapper.readthedocs.org/en/latest/#
 [Zsh]: http://www.zsh.org/
 
 It should take less than 15 minutes to install (depends on your machine and
@@ -174,7 +151,7 @@ curl --remote-name https://raw.githubusercontent.com/18F/laptop/master/.laptop.l
 Credits
 -------
 
-The 18F laptop script is based on and inspired by
+This labtop script is forked from 18F laptop script which is based on and inspired by
 [thoughtbot's laptop](https://github.com/thoughtbot/laptop) script.
 
 ### Public domain
